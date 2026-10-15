@@ -5,16 +5,16 @@ import "dotenv/config";
 import express from "express";
 import cors from "cors";
 import serverless from "serverless-http"; // Added for serverless
-import connectDB from "./src/config/db.js";
-import { notFound, errorHandler } from "./src/middleware/errorHandler.js";
+import connectDB from "./config/db.js";
+import { notFound, errorHandler } from "./middleware/errorHandler.js";
 
-import authRoutes from "./src/routes/authRoutes.js";
-import productRoutes from "./src/routes/productRoutes.js";
-import orderRoutes from "./src/routes/orderRoutes.js";
-import userRoutes from "./src/routes/userRoutes.js";
-import dashboardRoutes from "./src/routes/dashboardRoutes.js";
-import shopRoutes from "./src/routes/shopRoutes.js";
-import settingRoutes from "./src/routes/settingRoutes.js";
+import authRoutes from "./routes/authRoutes.js";
+import productRoutes from "./routes/productRoutes.js";
+import orderRoutes from "./routes/orderRoutes.js";
+import userRoutes from "./routes/userRoutes.js";
+import dashboardRoutes from "./routes/dashboardRoutes.js";
+import shopRoutes from "./routes/shopRoutes.js";
+import settingRoutes from "./routes/settingRoutes.js";
 
 const app = express();
 
